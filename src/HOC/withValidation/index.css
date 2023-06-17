@@ -1,0 +1,24 @@
+.with-validation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.with-validation--error {
+  animation: horizontal-shaking 0.22s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.with-validation__error-msg {
+  font-size: small;
+  color: #C73E1D;
+  margin: 4px 0 0;
+}
+
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(3px) }
+  50% { transform: translateX(-3px) }
+  75% { transform: translateX(3px) }
+  100% { transform: translateX(0) }
+}
